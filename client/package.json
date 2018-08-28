@@ -1,0 +1,24 @@
+{
+  "name": "cliente",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^1.4.1",
+    "i": "^0.3.6",
+    "jwt-decode": "^2.2.0",
+    "material-ui": "^0.20.1",
+    "npm": "^6.2.0",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.1.4",
+    "redux": "^4.0.0"
+  },
+  "scripts": {
+    "dev": "sh -ac '.' .env.local; PORT=3006 react-scripts start",
+    "build": "sh -ac '.' .env.production.local; react-scripts build && cp -R build/* ../server/public/ && mv ../server/public/index.html ../server/views/",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

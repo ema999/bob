@@ -1,0 +1,20 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width,initial-scale=1,shrink-to-fit=no')
+    meta(name='theme-color', content='#000000')
+    link(rel='manifest', href='/manifest.json')
+    link(rel='shortcut icon', href='/favicon.ico')
+    title Cloudsi
+    link(href='/static/css/main.29a15368.css', rel='stylesheet')
+  body
+    noscript You need to enable JavaScript to run this app.
+    script.
+      let jsonFromJade = "#{initialState}".replace(/&quot;/g, '"');
+      if (jsonFromJade != '#{initialState}') {
+      const initialState = JSON.parse(jsonFromJade);
+      window.initialState = initialState;
+      }
+    #root
+    script(type='text/javascript', src='/static/js/main.917246a7.js')
